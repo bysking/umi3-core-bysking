@@ -1,16 +1,15 @@
 import React from "react";
+import { NavLink, Outlet } from "react-router-dom";
 
 const UserLayout = (props) => (
   <div>
     <ul>
-      <li>
-        <a href="/user/add">添加用户</a>
-      </li>
-      <li>
-        <a href="/user/list">用户列表</a>
-      </li>
+      <NavLink to="add">添加用户</NavLink>--
+      <NavLink to="list">用户列表</NavLink>
     </ul>
-    <div>{props.children}</div>
+    <div>
+      <Outlet />
+    </div>
   </div>
 );
 
