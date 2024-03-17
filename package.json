@@ -3,5 +3,12 @@
   "version": "1.0.0",
   "main": "index.js",
   "author": "bysking <bysking@qq.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "dev": "umi dev"
+  },
+  "dependencies": {
+    "umi": "3"
+  },
+  "type": "module"
 }
